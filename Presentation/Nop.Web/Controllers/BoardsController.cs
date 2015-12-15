@@ -195,6 +195,7 @@ namespace Nop.Web.Controllers
             var model = new BoardsIndexModel();
             foreach (var forumGroup in forumGroups)
             {
+                khkhk
 
                 var forumGroupModel = PrepareForumGroupModel(forumGroup);
                 model.ForumGroups.Add(forumGroupModel);
