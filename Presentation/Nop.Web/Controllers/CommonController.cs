@@ -197,9 +197,6 @@ namespace Nop.Web.Controllers
         [ChildActionOnly]
         public ActionResult LanguageSelector()
         {
-            est
-                sdfs
-
             var availableLanguages = _cacheManager.Get(string.Format(ModelCacheEventConsumer.AVAILABLE_LANGUAGES_MODEL_KEY, _storeContext.CurrentStore.Id), () =>
             {
                 var result = _languageService
