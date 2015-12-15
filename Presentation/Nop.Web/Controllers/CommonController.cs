@@ -199,6 +199,7 @@ namespace Nop.Web.Controllers
         {
             var availableLanguages = _cacheManager.Get(string.Format(ModelCacheEventConsumer.AVAILABLE_LANGUAGES_MODEL_KEY, _storeContext.CurrentStore.Id), () =>
             {
+                //test
                 var result = _languageService
                     .GetAllLanguages(storeId: _storeContext.CurrentStore.Id)
                     .Select(x => new LanguageModel
